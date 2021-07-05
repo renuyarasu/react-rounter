@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Notfound from './Pages/Notfound';
+import Post from './Pages/Post';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
+          <Route path='/post/:id' component={Post} />
           <Route component={Notfound} />
         </Switch>
       </div>
