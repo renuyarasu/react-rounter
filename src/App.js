@@ -1,8 +1,17 @@
 import './App.css';
 import Header from './components/Header';
 
-const title = 'Hello React Rounter';
+const name = [
+  {
+    first: 'VedaGna',
+    last: 'Yarasu',
+  },
+  {
+    first: 'Renu',
+    last: 'Yarasau',
+  },
+]
 
-const App = () => <div className="App"><Header title={title} /></div>
+const App = (props) => <Header name={name} />
 
 export default App;

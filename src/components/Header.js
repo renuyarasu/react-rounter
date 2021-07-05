@@ -1,19 +1,16 @@
 import React from 'react';
 
-const Header = ({title}) => (
-   <>
-    <div>
-        <h1>{title}</h1>
-    </div>
-    <div>
-        <h1>{title}</h1>
-    </div>
-    <div>
-        <h1>{title}</h1>
-    </div>
-    <div>
-        <h1>{title}</h1>
-    </div>
-   </>
-)
+const Header = ({name}) => {
+    return (
+        <div className="App">
+            {
+                name.map(({first, last}) => (
+
+                    <h1>{first} {last} </h1>
+                ))
+            }
+        </div>
+    )
+}
+
 export default Header
